@@ -109,5 +109,5 @@ jupyter notebook
 ## 👤 Author
 
 Stephen Adebisi  
-Graduate Student – Quantitative & Spatial Analytics  
+Graduate Student – Geospatial Science  
 Machine Learning | Data Science | Statistical Modeling
