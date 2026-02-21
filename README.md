@@ -1,52 +1,97 @@
-\# 📊 Multiple Linear Regression Project
+# 📊 Multiple Linear Regression with Python
 
+A structured implementation of **Multiple Linear Regression** using Python, focused on model interpretation, evaluation, and reproducible workflow.
 
+---
 
-This project demonstrates the implementation of \*\*Multiple Linear Regression\*\* using Python in Jupyter Notebook.
+## 🧠 Project Overview
 
+This project demonstrates the complete workflow of building a multiple linear regression model, including:
 
+- Data preprocessing
+- Feature selection
+- Model fitting
+- Residual analysis
+- Model performance evaluation
+- Interpretation of regression coefficients
 
-\## 🚀 Project Overview
+The notebook emphasizes statistical reasoning alongside machine learning implementation.
 
-The notebook covers:
+---
 
-\- Data loading and preprocessing
+## ⚙️ Technologies Used
 
-\- Exploratory Data Analysis (EDA)
+- Python 3.x
+- NumPy
+- Pandas
+- Matplotlib
+- Scikit-learn
+- Jupyter Notebook
 
-\- Model fitting using Linear Regression
+---
 
-\- Model evaluation
+## 📂 Repository Structure
 
-\- Interpretation of coefficients
+```
+multiple-variable-linear-regression/
+│
+├── linear_regression_multiple_variables.ipynb
+├── README.md
+└── requirements.txt
+```
 
+---
 
+## 📈 Model Objective
 
-\## 🧠 Techniques Used
+To estimate the relationship between multiple independent variables and a continuous dependent variable using Ordinary Least Squares (OLS).
 
-\- NumPy
+The model assumes:
 
-\- Pandas
+- Linearity
+- Independence
+- Homoscedasticity
+- Normality of residuals
 
-\- Matplotlib
+---
 
-\- Scikit-learn
+## 📊 Key Outputs
 
+- Coefficient estimates
+- R² and Adjusted R²
+- Residual diagnostics
+- Prediction results
 
+---
 
-\## 📂 File
+## 🚀 How to Run
 
-\- `linear\_regression\_mulitple\_variables.ipynb`
+1. Clone the repository:
 
+```bash
+git clone https://github.com/stephen-adebisi/multiple-variable-linear-regression.git
+```
 
+2. Install dependencies:
 
-\## ▶️ How to Run
+```bash
+pip install -r requirements.txt
+```
 
-1\. Clone the repository
+3. Open the notebook:
 
-2\. Install dependencies:
+```bash
+jupyter notebook
+```
 
-&nbsp;  ```bash
+---
 
-&nbsp;  pip install -r requirements.txt
+## 📌 Author
 
+Stephen Adebisi  
+Graduate Student – Geography (GIS & Quantitative Methods)  
+Machine Learning | Spatial Analytics | Environmental Data Science
+
+---
+
+⭐ If you found this useful, feel free to star the repository.
