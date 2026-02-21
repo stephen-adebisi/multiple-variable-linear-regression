@@ -1,97 +1,113 @@
-# 📊 Multiple Linear Regression with Python
+# 📊 Multiple Linear Regression Analysis – Housing Prices
 
-A structured implementation of **Multiple Linear Regression** using Python, focused on model interpretation, evaluation, and reproducible workflow.
+## 📌 Project Objective
+
+This project implements a Multiple Linear Regression model to estimate housing prices based on structural property characteristics.
+
+The goal is to quantify how housing features influence market price using Ordinary Least Squares (OLS).
 
 ---
 
-## 🧠 Project Overview
+## 🧠 Dataset Overview
 
-This project demonstrates the complete workflow of building a multiple linear regression model, including:
+**Dependent Variable:**
+- `Price`
 
-- Data preprocessing
-- Feature selection
-- Model fitting
-- Residual analysis
-- Model performance evaluation
-- Interpretation of regression coefficients
+**Independent Variables:**
+- `Area`
+- `Bedrooms`
+- `Bathrooms`
+- `Stories`
 
-The notebook emphasizes statistical reasoning alongside machine learning implementation.
+Total observations: 545  
+Training set: 381  
+Test set: 164  
+
+---
+
+## 📐 Estimated Regression Equation
+
+The fitted model is:
+
+\[
+Price = -15,222.75 
++ 356.04(Area)
++ 119,297.18(Bedrooms)
++ 1,246,895.69(Bathrooms)
++ 536,079.09(Stories)
+\]
+
+---
+
+## 📊 Estimated Coefficients
+
+| Variable   | Coefficient |
+|------------|-------------|
+| Intercept  | -15,222.75 |
+| Area       | 356.04 |
+| Bedrooms   | 119,297.18 |
+| Bathrooms  | 1,246,895.69 |
+| Stories    | 536,079.09 |
+
+---
+
+## 📈 Model Performance Metrics
+
+- **R²:** 0.5243  
+- **Mean Squared Error (MSE):** 1,936,272,230,125.76  
+- **Root Mean Squared Error (RMSE):** 1,391,499.99  
+- **Relative RMSE:** 29.31%
+
+---
+
+## 🔎 Interpretation of Results
+
+- **Bathrooms** have the strongest effect on housing price.  
+  Adding one bathroom increases price by approximately **1,246,896** (currency units), holding other variables constant.
+
+- Each additional **story** increases price by approximately **536,079**.
+
+- Each additional **bedroom** increases price by approximately **119,297**.
+
+- Each additional unit increase in **area** increases price by approximately **356**.
+
+---
+
+## 📊 Model Evaluation
+
+The model explains approximately **52.4% of the variance** in housing prices, indicating moderate explanatory power.
+
+However:
+
+- Nearly half of price variation remains unexplained.
+- Additional predictors (e.g., location, amenities, age of property) may improve model fit.
+- Residual diagnostics and multicollinearity checks are recommended.
 
 ---
 
 ## ⚙️ Technologies Used
 
-- Python 3.x
+- Python
 - NumPy
 - Pandas
-- Matplotlib
 - Scikit-learn
+- Matplotlib
 - Jupyter Notebook
-
----
-
-## 📂 Repository Structure
-
-```
-multiple-variable-linear-regression/
-│
-├── linear_regression_multiple_variables.ipynb
-├── README.md
-└── requirements.txt
-```
-
----
-
-## 📈 Model Objective
-
-To estimate the relationship between multiple independent variables and a continuous dependent variable using Ordinary Least Squares (OLS).
-
-The model assumes:
-
-- Linearity
-- Independence
-- Homoscedasticity
-- Normality of residuals
-
----
-
-## 📊 Key Outputs
-
-- Coefficient estimates
-- R² and Adjusted R²
-- Residual diagnostics
-- Prediction results
 
 ---
 
 ## 🚀 How to Run
 
-1. Clone the repository:
-
 ```bash
 git clone https://github.com/stephen-adebisi/multiple-variable-linear-regression.git
-```
-
-2. Install dependencies:
-
-```bash
 pip install -r requirements.txt
-```
-
-3. Open the notebook:
-
-```bash
 jupyter notebook
 ```
 
 ---
 
-## 📌 Author
+## 👤 Author
 
 Stephen Adebisi  
-Graduate Student – Geography (GIS & Quantitative Methods)  
-Machine Learning | Spatial Analytics | Environmental Data Science
-
----
-
-⭐ If you found this useful, feel free to star the repository.
+Graduate Student – Quantitative & Spatial Analytics  
+Machine Learning | Data Science | Statistical Modeling
